@@ -17,7 +17,7 @@ class Spaceship: SKSpriteNode {
         let color = UIColor.clear
         
         super.init(texture: texture, color: color, size: size)
-        
+        self.zPosition = 2
         self.name = "spaceship"
         
     }

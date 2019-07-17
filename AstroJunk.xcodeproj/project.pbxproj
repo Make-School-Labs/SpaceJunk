@@ -19,6 +19,8 @@
 		AB6E651C22DD2179002A620E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6E651B22DD2179002A620E /* GameScene.swift */; };
 		AB6E651E22DD4555002A620E /* Debris.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6E651D22DD4555002A620E /* Debris.swift */; };
 		AB6E652022DE9419002A620E /* Spaceship Bullet.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB6E651F22DE9419002A620E /* Spaceship Bullet.ttf */; };
+		AB6E652222DF96FB002A620E /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = AB6E652122DF96FB002A620E /* Explosion.sks */; };
+		AB6E652422DF9B2E002A620E /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = AB6E652322DF9B2E002A620E /* Fire.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		AB6E651B22DD2179002A620E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		AB6E651D22DD4555002A620E /* Debris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debris.swift; sourceTree = "<group>"; };
 		AB6E651F22DE9419002A620E /* Spaceship Bullet.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spaceship Bullet.ttf"; sourceTree = "<group>"; };
+		AB6E652122DF96FB002A620E /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Explosion.sks; path = AstroJunk/Explosion.sks; sourceTree = SOURCE_ROOT; };
+		AB6E652322DF9B2E002A620E /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				AB6E64DE22DD13AB002A620E /* AppDelegate.swift */,
 				AB6E64E622DD13AB002A620E /* GameViewController.swift */,
 				AB6E651B22DD2179002A620E /* GameScene.swift */,
+				AB6E652122DF96FB002A620E /* Explosion.sks */,
+				AB6E652322DF9B2E002A620E /* Fire.sks */,
 				AB6E651A22DD1FFE002A620E /* Model */,
 				AB6E64E822DD13AB002A620E /* Main.storyboard */,
 				AB6E64ED22DD13AD002A620E /* LaunchScreen.storyboard */,
@@ -254,6 +260,8 @@
 			files = (
 				AB6E64EA22DD13AB002A620E /* Main.storyboard in Resources */,
 				AB6E64EC22DD13AD002A620E /* Assets.xcassets in Resources */,
+				AB6E652222DF96FB002A620E /* Explosion.sks in Resources */,
+				AB6E652422DF9B2E002A620E /* Fire.sks in Resources */,
 				AB6E652022DE9419002A620E /* Spaceship Bullet.ttf in Resources */,
 				AB6E64EF22DD13AD002A620E /* LaunchScreen.storyboard in Resources */,
 			);

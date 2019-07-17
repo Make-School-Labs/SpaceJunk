@@ -70,6 +70,7 @@ class GameScene: SKScene {
         scoreLabel.position = CGPoint(
             x: -playableRect.size.width/2 + CGFloat(20), y: playableRect.size.height/2 - CGFloat(80))
         cameraNode.addChild(scoreLabel)
+        
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -124,6 +125,7 @@ class GameScene: SKScene {
         ship.position.x = (self.scene?.frame.size.width)!/2
         ship.position.y = (self.scene?.frame.size.height)!/4
         addChild(ship)
+        addTrail(name: "Fire")
     }
     
     func createMeteorsAndDebris(){
@@ -242,7 +244,30 @@ class GameScene: SKScene {
         
         for meteor in hitMeteors {
             self.ship.collides(with: meteor)
+            addExplosionTrail()
         }
+    }
+    
+    // MARK: Particles
+    
+    func addTrail(name: String){
+        let trail = SKEmitterNode(fileNamed: name)!
+        trail.zPosition = 0
+        trail.position = CGPoint(x: 0, y: -ship.frame.size.height/2)
+        trail.targetNode = ship
+        ship.addChild(trail)
+    }
+    
+    func addExplosionTrail(){
+        let trail = SKEmitterNode(fileNamed: "Explosion")!
+        trail.zPosition = 0
+        trail.position = CGPoint(x: 0, y: ship.frame.size.height/2)
+        trail.targetNode = ship
+        ship.addChild(trail)
+        trail.numParticlesToEmit = 20
+        let wait = SKAction.wait(forDuration: 1)
+        let remove = SKAction.removeFromParent()
+        trail.run(SKAction.sequence([wait,remove]))
     }
 }
 
